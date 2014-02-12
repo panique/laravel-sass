@@ -34,6 +34,8 @@ class SassCompiler
     {
         // scssc will be loaded automatically via Composer
         $scss_compiler = new scssc();
+        // set the path where your _mixins are
+        $scss_compiler->setImportPaths($scss_folder);
         // set css formatting (normal, nested or minimized), @see http://leafo.net/scssphp/docs/#output_formatting
         $scss_compiler->setFormatter($format_style);
         // get all .scss files from scss folder
