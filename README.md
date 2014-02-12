@@ -44,13 +44,9 @@ for nested output, optimized for readability.
 ## Testing
 
 To test if everything works okay, simply add this to the head of `app/views/hello.php`:
-
-```html
-<link rel="stylesheet" type="text/css" href="css/style.css">
-```
-
-and put a file called style.scss in your scss folder. Now run the app and play around with the (s)css rules in your
-style.scss, after each refresh you should see the changes instantly!
+`<link rel="stylesheet" type="text/css" href="css/style.css">` and put a file called style.scss in your scss folder.
+Now run the app and play around with the (s)css rules in your style.scss, after each refresh you should see the changes
+instantly!
 
 ## Used scripts
 
@@ -67,13 +63,15 @@ scssphp supports the latest SCSS syntax (3.2.12).
 
 ## License
 
-Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Totally free for private or commercial projects.
+Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Totally free for private or commercial
+projects.
 
 ## Support / Donate
 
 If you think this script is useful, then think about supporting the project:
 
-1. Rent your next server at [A2 Hosting](http://www.a2hosting.com/4471.html) or [DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20).
+1. Rent your next server at [A2 Hosting](http://www.a2hosting.com/4471.html) or
+[DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20).
 2. Donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
    or [GitTip](https://www.gittip.com/Panique/)
 3. Contribute to this project.
