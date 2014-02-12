@@ -48,10 +48,11 @@ To test if everything works okay, simply add this to the head of `app/views/hell
 Now run the app and play around with the (s)css rules in your style.scss, after each refresh you should see the changes
 instantly!
 
-## What does NOT work (currently)
+## How @import of mixins work
 
-The `@import` of sass rules from other files does not work yet. To workaround, simply put the to-be-imported stuff
-directly in the file it used these rules.
+The `@import` of sass rules from other files works now perfectly, but make sure the _mixin files are exactly in the
+same folder like your other .scss files. Currently laravel-sass does not support _mixings from other folders (but
+that's a feature on the todo-list).
 
 ## Used scripts
 
