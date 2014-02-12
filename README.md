@@ -82,5 +82,7 @@ If you think this script is useful, then think about supporting the project:
 
 I'm available for freelance work. Remote worldwide or locally around Central Europe. Mail me if you like.
 
+## Stats
+
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/panique/laravel-sass/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
