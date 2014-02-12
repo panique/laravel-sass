@@ -9,7 +9,7 @@ your css folder. Boom!
 
 ## Installation & Usage
 
-1. Add this to your composer.json, please note that this is a **require-dev**, not a normal **require**. This devides
+Add this to your composer.json, please note that this is a **require-dev**, not a normal **require**. This devides
 real dependencies from ones you only need for local development.
 
 ```json
@@ -18,7 +18,7 @@ real dependencies from ones you only need for local development.
 }
 ```
 
-2. Add this line into your `public/index.php` in Laravel, right **before** `$app->run();`.
+Add this line into your `public/index.php` in Laravel, right **before** `$app->run();`.
 
 ```php
 SassCompiler::run("public/scss/", "public/css/");
@@ -29,7 +29,7 @@ path to your css folder. Make sure PHP can write into the css folder by giving t
 `sudo chmod -R 777 public/css`. **Note:** 777 is just for development, in a production server there's no need to give
 that folder any write-rights.
 
-3. Install or update your Composer dependencies to add laravel-sass by doing `composer install` or `composer update`.
+Install or update your Composer dependencies to add laravel-sass by doing `composer install` or `composer update`.
 Composer automatically installs everything in require-dev by default.
 
 **IMPORTANT:** When you later deploy your application and don't want to install the require-dev stuff, then do
