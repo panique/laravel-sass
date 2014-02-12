@@ -43,7 +43,7 @@ for nested output, optimized for readability.
 
 ## Testing
 
-To test if everything works okay, simply add this to the <head> of `app/views/hello.php`:
+To test if everything works okay, simply add this to the head of `app/views/hello.php`:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/style.css">
