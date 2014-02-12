@@ -1,9 +1,9 @@
 laravel-sass
 ============
 
-Automatic SASS-to-CSS compiling for Laravel 4 (while being in development). Every time you run your app
-(hitting index.php) laravel-sass will automatically compile all .scss files in your scss folder to .css files in
-your css folder. Boom!
+Automatic SASS-to-CSS compiling for Laravel 4 (and any other framework by the way) while being in development.
+Every time you run your app (hitting index.php) laravel-sass will automatically compile all .scss files in your scss
+folder to .css files in your css folder. Support latest version of SASS (scss syntax) and mixins. Boom!
 
 ## Installation & Usage
 
