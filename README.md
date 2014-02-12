@@ -1,9 +1,7 @@
 laravel-sass
 ============
 
-**THIS REPO IS IN DEVELOPMENT. DON'T USE IT YET.**
-
-Automatic SASS-to-CSS compiling for Laravel 4 while being in development. Every time you run your app
+Automatic SASS-to-CSS compiling for Laravel 4 (while being in development). Every time you run your app
 (hitting index.php) laravel-sass will automatically compile all .scss files in your scss folder to .css files in
 your css folder. Boom!
 
@@ -25,7 +23,8 @@ SassCompiler::run("scss/", "css/");
 ```
 
 The first parameter is the relative path to your scss folder (create one) and the second parameter is the relative
-path to your css folder. Make sure PHP can write into the css folder by giving the folder
+path to your css folder. Usually it totally makes sense to create those folders in the public folder.
+Make sure PHP can write into the css folder by giving the folder
 `sudo chmod -R 777 public/css` (when being in /var/www).
 **Note:** 777 is just for development, in a production server there's no need to give that folder any write-rights.
 
@@ -34,3 +33,52 @@ Composer automatically installs everything in require-dev by default.
 
 **IMPORTANT:** When you later deploy your application and don't want to install the require-dev stuff, then do
 `composer install --no-dev` (or `composer update --no-dev`).
+
+## Optional feature
+
+There's an optional third parameter for `SassCompiler::run()` that expects one of the strings explained on
+http://leafo.net/scssphp/docs/#output_formatting. This defines the desired output. `scss_formatter` is the standard
+laravel-sass uses, choose `scss_formatter_compressed` if you need a minimized css file. `scss_formatter_nested` is
+for nested output, optimized for readability.
+
+## Testing
+
+To test if everything works okay, simply add this to the <head> of `app/views/hello.php`:
+
+```html
+<link rel="stylesheet" type="text/css" href="css/style.css">
+```
+
+and put a file called style.scss in your scss folder. Now run the app and play around with the (s)css rules in your
+style.scss, after each refresh you should see the changes instantly!
+How cool it that ?
+
+## Used scripts
+
+This tool uses the excellent [scssphp SASS compiler](http://leafo.net/scssphp/).
+scssphp supports the latest SCSS syntax (3.2.12).
+
+## Other projects
+
+- https://github.com/panique/php-login
+- https://github.com/panique/php-mvc
+- https://github.com/panique/php-sass
+- https://github.com/panique/php-long-polling
+- My blog DEV METAL: http://www.dev-metal.com
+
+## License
+
+Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Totally free for private or commercial projects.
+
+## Support / Donate
+
+If you think this script is useful, then think about supporting the project:
+
+1. Rent your next server at [A2 Hosting](http://www.a2hosting.com/4471.html) or [DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20).
+2. Donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
+   or [GitTip](https://www.gittip.com/Panique/)
+3. Contribute to this project.
+
+## Hire me
+
+I'm available for freelance work. Remote worldwide or locally around Central Europe. Mail me if you like.
