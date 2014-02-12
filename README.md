@@ -51,7 +51,6 @@ To test if everything works okay, simply add this to the head of `app/views/hell
 
 and put a file called style.scss in your scss folder. Now run the app and play around with the (s)css rules in your
 style.scss, after each refresh you should see the changes instantly!
-How cool it that ?
 
 ## Used scripts
 
