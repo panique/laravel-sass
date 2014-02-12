@@ -21,13 +21,13 @@ real dependencies from ones you only need for local development.
 Add this line into your `public/index.php` in Laravel, right **before** `$app->run();`.
 
 ```php
-SassCompiler::run("public/scss/", "public/css/");
+SassCompiler::run("scss/", "css/");
 ```
 
 The first parameter is the relative path to your scss folder (create one) and the second parameter is the relative
 path to your css folder. Make sure PHP can write into the css folder by giving the folder
-`sudo chmod -R 777 public/css`. **Note:** 777 is just for development, in a production server there's no need to give
-that folder any write-rights.
+`sudo chmod -R 777 public/css` (when being in /var/www).
+**Note:** 777 is just for development, in a production server there's no need to give that folder any write-rights.
 
 Install or update your Composer dependencies to add laravel-sass by doing `composer install` or `composer update`.
 Composer automatically installs everything in require-dev by default.
