@@ -61,6 +61,11 @@ If the file is called _colors.scss and is in the subfolder `modules` of the basi
 ```
 Read the official docs for more.
 
+## When deploying ...
+
+.. then make sure you comment out this line again: `SassCompiler::run("scss/", "css/");`. Future releases of this
+tool will have a development/production switch/recognizer.
+
 ## Used scripts
 
 This tool uses the excellent [scssphp SASS compiler](http://leafo.net/scssphp/).
