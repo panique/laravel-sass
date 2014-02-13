@@ -48,17 +48,18 @@ To test if everything works okay, simply add this to the head of `app/views/hell
 Now run the app and play around with the (s)css rules in your style.scss, after each refresh you should see the changes
 instantly!
 
-## How @import of mixins work
+## How @import works
 
 The `@import` of sass rules from other files works now perfectly. Make sure to import the files like it should be:
-1. If the file is called _colors.scss and is in the basic scss folder:
+If the file is called _colors.scss and is in the basic scss folder:
 ```
 @import 'colors';
 ```
-2. If the file is called _colors.scss and is in the subfolder `modules` of the basic scss folder:
+If the file is called _colors.scss and is in the subfolder `modules` of the basic scss folder:
 ```
 @import 'modules/colors';
 ```
+Read the official docs for more.
 
 ## Used scripts
 
