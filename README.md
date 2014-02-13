@@ -50,9 +50,15 @@ instantly!
 
 ## How @import of mixins work
 
-The `@import` of sass rules from other files works now perfectly, but make sure the _mixin files are exactly in the
-same folder like your other .scss files. Currently laravel-sass does not support _mixings from other folders (but
-that's a feature on the todo-list).
+The `@import` of sass rules from other files works now perfectly. Make sure to import the files like it should be:
+1. If the file is called _colors.scss and is in the basic scss folder:
+```
+@import 'colors';
+```
+2. If the file is called _colors.scss and is in the subfolder `modules` of the basic scss folder:
+```
+@import 'modules/colors';
+```
 
 ## Used scripts
 
