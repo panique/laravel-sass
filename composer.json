@@ -1,7 +1,7 @@
 {
     "name": "panique/laravel-sass",
     "type": "library",
-    "description": "Compiles your SASS .scss files to .css every time your run your app (in development)",
+    "description": "Compiles your SASS .scss files to .css every time you run your app (in development)",
     "keywords": ["sass", "scss", "css"],
     "homepage": "https://github.com/panique/laravel-sass",
     "license": "MIT",
