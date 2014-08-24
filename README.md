@@ -92,13 +92,10 @@ If you think this script is useful, then think about supporting the project:
 [DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20).
 2. Donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
    or [GitTip](https://www.gittip.com/Panique/)
+   or [Flattr](https://flattr.com/submit/auto?user_id=panique&url=https%3A%2F%2Fgithub.com%2Fpanique%2Flaravel-sass)
 3. Contribute to this project.
 
 ## Hire me
 
-I'm available for freelance work. Remote worldwide or locally around Central Europe. Mail me if you like.
-
-## Stats
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/panique/laravel-sass/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+I'm available for freelance work. Remote worldwide or locally around Central Europe. Mail me if you like, the address
+can be found easily.
