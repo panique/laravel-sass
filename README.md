@@ -12,7 +12,7 @@ real dependencies from ones you only need for local development.
 
 ```json
 "require-dev": {
-    "panique/laravel-sass": "dev-master"
+    "panique/laravel-sass": "1.0"
 }
 ```
 
