@@ -21,6 +21,6 @@
     },
     "require": {
         "php": ">=5.3.0",
-        "leafo/scssphp": "v0.0.9"
+        "leafo/scssphp": "v0.0.14"
     }
 }

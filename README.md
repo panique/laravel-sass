@@ -66,6 +66,11 @@ Read the official docs for more.
 .. then make sure you comment out this line again: `SassCompiler::run("scss/", "css/");`. Future releases of this
 tool will have a development/production switch/recognizer.
 
+## To use the very latest features of SASS:
+
+Currently php-sass fetches v0.0.14 (August 2014) of *leafo/scssphp* as a compiler. For latest features you might want a 
+newer version, so have a look here https://github.com/leafo/scssphp/releases and edit the composer.json accordingly.
+
 ## Used scripts
 
 This tool uses the excellent [scssphp SASS compiler](http://leafo.net/scssphp/).
