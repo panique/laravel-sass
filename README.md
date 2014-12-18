@@ -1,9 +1,9 @@
 laravel-sass
 ============
 
-Automatic SASS-to-CSS compiling for Laravel 4 (and any other framework by the way) while being in development.
+Automatic Sass-to-CSS compiling for Laravel 4 (and any other framework by the way) while being in development.
 Every time you run your app (hitting index.php) laravel-sass will automatically compile all .scss files in your scss
-folder to .css files in your css folder. Support latest version of SASS (scss syntax) and mixins. Boom!
+folder to .css files in your css folder. Support latest version of Sass (scss syntax) and mixins. Boom!
 
 ## Installation & Usage
 
@@ -66,14 +66,14 @@ Read the official docs for more.
 .. then make sure you comment out this line again: `SassCompiler::run("scss/", "css/");`. Future releases of this
 tool will have a development/production switch/recognizer.
 
-## To use the very latest features of SASS:
+## To use the very latest features of Sass:
 
 Currently php-sass fetches v0.0.14 (August 2014) of *leafo/scssphp* as a compiler. For latest features you might want a 
 newer version, so have a look here https://github.com/leafo/scssphp/releases and edit the composer.json accordingly.
 
 ## Used scripts
 
-This tool uses the excellent [scssphp SASS compiler](http://leafo.net/scssphp/).
+This tool uses the excellent [scssphp Sass compiler](http://leafo.net/scssphp/).
 scssphp supports the latest SCSS syntax (3.2.12).
 
 ## Other projects
