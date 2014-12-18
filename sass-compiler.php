@@ -11,14 +11,14 @@
  * automatic compiling to it.
  *
  * The currently supported version of SCSS syntax is 3.2.12, which is the latest one.
- * To avoid confusion: SASS is the name of the language itself, and also the "name" of the "first" version of the
- * syntax (which was quite different than CSS). Then SASS's syntax was changed to "SCSS", which is more like CSS, but
- * with awesome additional possibilities and features.
+ * To avoid confusion: Sass is the name of the language itself, and also the "name" of the "first" version of the
+ * syntax (which was quite different than CSS). Then the newer Sass syntax, "SCSS" was added, which is more like CSS, but
+ * has Sass functionality.
  *
- * The compiler uses the SCSS syntax, which is recommended and mostly used. The old SASS syntax is not supported.
+ * The compiler uses the SCSS syntax, which is recommended and mostly used. The old Sass syntax is not supported.
  *
- * @see SASS Wikipedia: http://en.wikipedia.org/wiki/Sass_%28stylesheet_language%29
- * @see SASS Homepage: http://sass-lang.com/
+ * @see Sass Wikipedia: http://en.wikipedia.org/wiki/Sass_%28stylesheet_language%29
+ * @see Sass Homepage: http://sass-lang.com/
  * @see scssphp, the used compiler (in PHP): http://leafo.net/scssphp/
  */
 class SassCompiler
@@ -49,7 +49,7 @@ class SassCompiler
             $file_name = $file_path_elements['filename'];
             // get .scss's content, put it into $string_sass
             $string_sass = file_get_contents($scss_folder . $file_name . ".scss");
-            // compile this SASS code to CSS
+            // compile this Sass code to CSS
             $string_css = $scss_compiler->compile($string_sass);
             // write CSS into file with the same filename, but .css extension
             file_put_contents($css_folder . $file_name . ".css", $string_css);
