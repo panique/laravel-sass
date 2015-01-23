@@ -51,7 +51,7 @@ class SassCompiler
             $scss_path = $scss_folder . $file_name . ".scss";
             $css_path = $css_folder . $file_name . ".css";
             // do not compile if scss has not been recently updated
-            if (filemtime($scss_path) < filemtime($css_path)) continue;
+            if (! filemtime($scss_path) > filemtime($css_path)) continue;
             // get .scss's content, put it into $string_sass
             $string_sass = file_get_contents($scss_path);
             // compile this SASS code to CSS
