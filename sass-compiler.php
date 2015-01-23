@@ -32,26 +32,35 @@ class SassCompiler
      */
     static public function run($scss_folder, $css_folder, $format_style = "scss_formatter")
     {
+        // get all .scss files from scss folder
+        $filelist = glob($scss_folder . "*.scss");
+        
+        // loop through .scss files and see if any need recompilation
+        $has_changes = false;
+        foreach ($filelist as $file_path) {
+            $css_path = str_replace('.scss', '.css', $file_path);
+            if (! realpath($css_path) or filemtime($file_path) > filemtime($css_path)) {
+                $has_changes = true;
+                break;
+            }
+        }
+        // no files are changed, retun
+        if (! $has_changes) return false;
+
         // scssc will be loaded automatically via Composer
         $scss_compiler = new scssc();
         // set the path where your _mixins are
         $scss_compiler->setImportPaths($scss_folder);
         // set css formatting (normal, nested or minimized), @see http://leafo.net/scssphp/docs/#output_formatting
         $scss_compiler->setFormatter($format_style);
-        // get all .scss files from scss folder
-        $filelist = glob($scss_folder . "*.scss");
 
         // step through all .scss files in that folder
         foreach ($filelist as $file_path) {
-            // get path elements from that file
-            $file_path_elements = pathinfo($file_path);
-            // get file's name without extension
-            $file_name = $file_path_elements['filename'];
-            // set scss and css paths
-            $scss_path = $scss_folder . $file_name . ".scss";
-            $css_path = $css_folder . $file_name . ".css";
+            // get scss and css paths
+            $scss_path = $file_path;
+            $css_path = str_replace('.scss', '.css', $file_path);
             // do not compile if scss has not been recently updated
-            if (! filemtime($scss_path) > filemtime($css_path)) continue;
+            if (realpath($css_path) and ! filemtime($scss_path) > filemtime($css_path)) continue;
             // get .scss's content, put it into $string_sass
             $string_sass = file_get_contents($scss_path);
             // compile this SASS code to CSS
