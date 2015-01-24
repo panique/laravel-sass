@@ -58,7 +58,7 @@ class SassCompiler
         foreach ($filelist as $file_path) {
             // get scss and css paths
             $scss_path = $file_path;
-            $css_path = str_replace('.scss', '.css', $file_path);
+            $css_path = str_replace(array($scss_folder, '.scss'), array($css_folder, '.css'), $file_path);
             // do not compile if scss has not been recently updated
             if (realpath($css_path) and ! filemtime($scss_path) > filemtime($css_path)) continue;
             // get .scss's content, put it into $string_sass
