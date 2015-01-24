@@ -38,12 +38,13 @@ class SassCompiler
         // loop through .scss files and see if any need recompilation
         $has_changes = false;
         foreach ($filelist as $file_path) {
-            $css_path = str_replace('.scss', '.css', $file_path);
+            $css_path = str_replace(array($scss_folder, '.scss'), array($css_folder, '.css'), $file_path);
             if (! realpath($css_path) or filemtime($file_path) > filemtime($css_path)) {
                 $has_changes = true;
                 break;
             }
         }
+
         // no files are changed, retun
         if (! $has_changes) return false;
 
