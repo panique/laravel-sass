@@ -1,14 +1,13 @@
 {
     "name": "panique/laravel-sass",
     "type": "library",
-    "description": "Compiles your SASS .scss files to .css every time your run your app (in development)",
+    "description": "Compiles your SASS .scss files to .css with pure PHP (in development)",
     "keywords": ["sass", "scss", "css"],
     "homepage": "https://github.com/panique/laravel-sass",
     "license": "MIT",
     "authors": [
         {
             "name": "Panique",
-            "homepage": "http://careers.stackoverflow.com/panique",
             "role": "Developer"
         }
     ],
