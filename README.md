@@ -78,10 +78,11 @@ scssphp supports the latest SCSS syntax (3.2.12).
 
 ## Other projects
 
-- https://github.com/panique/php-login
-- https://github.com/panique/php-mvc
-- https://github.com/panique/php-sass
-- https://github.com/panique/php-long-polling
+- https://github.com/panique/huge (a framework with full login system behind)
+- https://github.com/panique/mini2 (a naked application on top of Slim)
+- https://github.com/panique/mini (a super-simple naked barebone application)
+- https://github.com/panique/php-sass (SASS compiling in pure PHP)
+- https://github.com/panique/php-long-polling (long-polling with PHP, extremely simple)
 - My blog DEV METAL: http://www.dev-metal.com
 
 ## License
@@ -89,18 +90,8 @@ scssphp supports the latest SCSS syntax (3.2.12).
 Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Totally free for private or commercial
 projects.
 
-## Support / Donate
+## Support
 
-If you think this script is useful, then think about supporting the project:
-
-1. Rent your next server at [A2 Hosting](http://www.a2hosting.com/4471.html) or
+If you think this script is useful, then think about supporting the project by renting your next server at
+[Host1Plus](https://affiliates.host1plus.com/ref/devmetal/36f4d828.html) or 
 [DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20).
-2. Donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
-   or [GitTip](https://www.gittip.com/Panique/)
-   or [Flattr](https://flattr.com/submit/auto?user_id=panique&url=https%3A%2F%2Fgithub.com%2Fpanique%2Flaravel-sass)
-3. Contribute to this project.
-
-## Hire me
-
-I'm available for freelance work. Remote worldwide or locally around Central Europe. Mail me if you like, the address
-can be found easily.
