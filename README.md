@@ -1,9 +1,9 @@
 laravel-sass
 ============
 
-Automatic SASS-to-CSS compiling for Laravel 4 (and any other framework by the way) while being in development.
+Automatic Sass-to-CSS compiling for Laravel 4 (and any other framework by the way) while being in development.
 Every time you run your app (hitting index.php) laravel-sass will automatically compile all .scss files in your scss
-folder to .css files in your css folder. Support latest version of SASS (scss syntax) and mixins. Boom!
+folder to .css files in your css folder. Support latest version of Sass (scss syntax) and mixins. Boom!
 
 ## Installation & Usage
 
@@ -12,7 +12,7 @@ real dependencies from ones you only need for local development.
 
 ```json
 "require-dev": {
-    "panique/laravel-sass": "dev-master"
+    "panique/laravel-sass": "1.0"
 }
 ```
 
@@ -66,17 +66,23 @@ Read the official docs for more.
 .. then make sure you comment out this line again: `SassCompiler::run("scss/", "css/");`. Future releases of this
 tool will have a development/production switch/recognizer.
 
+## To use the very latest features of Sass:
+
+Currently php-sass fetches v0.0.14 (August 2014) of *leafo/scssphp* as a compiler. For latest features you might want a 
+newer version, so have a look here https://github.com/leafo/scssphp/releases and edit the composer.json accordingly.
+
 ## Used scripts
 
-This tool uses the excellent [scssphp SASS compiler](http://leafo.net/scssphp/).
+This tool uses the excellent [scssphp Sass compiler](http://leafo.net/scssphp/).
 scssphp supports the latest SCSS syntax (3.2.12).
 
 ## Other projects
 
-- https://github.com/panique/php-login
-- https://github.com/panique/php-mvc
-- https://github.com/panique/php-sass
-- https://github.com/panique/php-long-polling
+- https://github.com/panique/huge (a framework with full login system behind)
+- https://github.com/panique/mini2 (a naked application on top of Slim)
+- https://github.com/panique/mini (a super-simple naked barebone application)
+- https://github.com/panique/php-sass (SASS compiling in pure PHP)
+- https://github.com/panique/php-long-polling (long-polling with PHP, extremely simple)
 - My blog DEV METAL: http://www.dev-metal.com
 
 ## License
@@ -84,18 +90,8 @@ scssphp supports the latest SCSS syntax (3.2.12).
 Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Totally free for private or commercial
 projects.
 
-## Support / Donate
+## Support
 
-If you think this script is useful, then think about supporting the project:
-
-1. Rent your next server at [A2 Hosting](http://www.a2hosting.com/4471.html) or
+If you think this script is useful, then think about supporting the project by renting your next server at
+[Host1Plus](https://affiliates.host1plus.com/ref/devmetal/36f4d828.html) or 
 [DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20).
-2. Donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
-   or [GitTip](https://www.gittip.com/Panique/)
-   or [Flattr](https://flattr.com/submit/auto?user_id=panique&url=https%3A%2F%2Fgithub.com%2Fpanique%2Flaravel-sass)
-3. Contribute to this project.
-
-## Hire me
-
-I'm available for freelance work. Remote worldwide or locally around Central Europe. Mail me if you like, the address
-can be found easily.
